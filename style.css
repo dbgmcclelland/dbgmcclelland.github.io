@@ -79,6 +79,8 @@ p:mainMenu {
 
 .content {
 	padding: 10px;
+	height: 75%;
+	overflow: auto;
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
