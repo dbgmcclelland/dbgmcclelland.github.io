@@ -1,28 +1,130 @@
 @charset "utf-8";
 /* CSS Document*/
 /*Define the body element's color*/
-body
-{background: #FFFFFF;
-}
-/*This section is for links*/
-a:link
-{font-weight:normal; color:Navy
-}
-a:visited
-{font-weight:normal; color:Green;
-}
-a:hover
-{font-weight:bold; color: Red; font-variant:small-caps;
-}
-/*This section is for a paragraph section*/
-p {font-style:italic; font-size:18px;
-}
-blue {color:#0000FF;
-}
-/*This section is for the image's black border.*/
-img {border-color: #000000; border:thick; border-style:ridge;
+body {
+	background: #f7f4ed;
+	font-family: Calibri;
 }
 
-#leafletMap {
-	height:350px;
+/*This section is for a paragraph section*/
+br:name {
+	font-weight: bold;
+}
+
+p:mainMenu {
+	padding-left: 10px;
+}
+
+/* Responsive grid code courtesy of http://http://www.responsivegridsystem.com/ */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 2%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF EIGHT  */
+.span_8_of_8 {
+	width: 100%;
+	background: #e6e6e5
+}
+
+.span_7_of_8 {
+  	width: 87.25%;
+	background: #e6e6e5
+}
+
+.span_6_of_8 {
+  	width: 74.5%;
+	background: #e6e6e5
+}
+
+.span_5_of_8 {
+  	width: 61.75%;
+	background: #e6e6e5
+}
+
+.span_4_of_8 {
+  	width: 49%;
+	background: #e6e6e5
+}
+
+.span_3_of_8 {
+  	width: 36.25%;
+	background: #e6e6e5;
+}
+
+.span_2_of_8 {
+  	width: 23.5%;
+	background: #e6e6e5
+}
+
+.span_1_of_8 {
+  	width: 10.75%;
+	background: #e6e6e5
+}
+
+.content {
+	padding: 10px;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_8, .span_2_of_8, .span_3_of_8, .span_4_of_8, .span_5_of_8, .span_6_of_8, .span_7_of_8, .span_8_of_8 { width: 100%; }
+}
+
+/*Button style generated using http://www.bestcssbuttongenerator.com/#/0*/
+.myButton {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Calibri;
+	color:white;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
