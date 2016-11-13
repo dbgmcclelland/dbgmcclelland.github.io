@@ -1,19 +1,16 @@
 <!DOCTYPE="html">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>David McClelland GIS</title>
-<!--<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
 </head>
 
 <body>
 <div class="section group">
-	<div class="col span_8_of_8">
-		<h1 style="text-align:center; background:#f7f4ed">David McClelland GIS</h1>
+	<div class="col span_1_of_8">
+	</div>
+	<div class="col span_7_of_8" style="background:#FCF7FF;">
+		<h1>David McClelland GIS</h1>
 	</div>
 </div>
 <div class="section group">
@@ -37,10 +34,12 @@
 		<div class="content" id="main">
 		<h3>Kingston Ferry Docks Bathymetry Map</h3>
 		<center><img style="align:center;" src="KingstonDocks.jpg"></center>
-		<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br>This map was produced for the Ontario Ministry of Transportation (MTO), as a guide to the water depths around a ferry dock operated by the MTO in Kingston, Ontario. The data was initially in a raw format, delivered from an external contract as sonar readings. The data was then converted to a point layer, and a raster dataset was created using an Inverse Distance Weighted interpolator. The density of the points available from the sonar data ensured that the interpolation should have an extremely low level of error. Contours and a hillshade were created from the resulting raster dataset to allow for easier interpretation of the information.
+		<br>
+		<br><i>Note: The map layout was produced at a poster size, some detail was lost when the image was resized for the web</i>
 		<h3>Reptile Fence Map</h3>
 		<center><img style="align:center;" src="ReptileFences.png"></center>
-		<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br>This is another map produced for the MTO, in this case a request from the Environmental section for a map of reptile fences along provincial highways in Eastern Ontario. The map was intended to be used in a presentation, so simplicity seemed to be the best approach. Only the most pertinent features were included, namely the highways, water features, and the fence locations themselves. Additionally, simple flat colours and symbols were chosen so that each feature could be easily distinguished and interpreted.
 		</div>
 	</div>
 </div>

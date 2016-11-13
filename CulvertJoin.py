@@ -25,7 +25,7 @@ print "Running initial join ........ "
 arcpy.AddJoin_management(CulvertsSewersLyr, "DAID", Culverts_and_Sewers_Inspection_Table, "DAID", "KEEP_ALL")
 print "Join complete, selecting unique DAIDs ........ "
 
-# Save copy of joined feature layer for export
+# Creates feature class from joined layer
 
 arcpy.CopyFeatures_management(CulvertsSewersLyr, "CulvertsSewersNew")
 fc = "CulvertsSewersNew"
@@ -57,7 +57,7 @@ for ID in DAID:
         for row in cursor:
             if row[1] is not None:
                 dates.append(row[1])
-    if len(dates) > 0: # If the only inspection dates are null, list will be empty, this avoids an error
+    if len(dates) > 0: # Null dates will cause an error and should be fixed in the table. This check prevents an error if the only dates are null.
         maxdate = max(dates)
         dateDict[ID] = maxdate
     else:
@@ -85,6 +85,8 @@ print "Exporting feature class to shapefile and MapGuide ....... "
 
 errorLog = r'W:\ENG\Geomatics\GIS\MapGuide_Data_Updates\log.txt'
 filePath = errorLog
+
+# Export to MapGuide
 try:
 ######################     Step 1 - Test to see if file exists on MapGuide Server (if so, delete)   ######################
     test = MapGuide_Folder

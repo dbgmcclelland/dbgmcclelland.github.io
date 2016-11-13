@@ -1,19 +1,16 @@
 <!DOCTYPE="html">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>David McClelland GIS</title>
-<!--<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
 </head>
 
 <body>
 <div class="section group">
-	<div class="col span_8_of_8">
-		<h1 style="text-align:center; background:#f7f4ed">David McClelland GIS</h1>
+	<div class="col span_1_of_8">
+	</div>
+	<div class="col span_7_of_8" style="background:#FCF7FF;">
+		<h1>David McClelland GIS</h1>
 	</div>
 </div>
 <div class="section group">
@@ -38,12 +35,18 @@
 		<h3>Table to Feature Class Join and Export</h3>
 		<a href="https://github.com/dbgmcclelland/dbgmcclelland.github.io/blob/master/CulvertJoin.py" target="_blank"><img style="align:center;" src="CulvertJoin.png">
 		<figcaption><i>Full code (opens in new tab)</i></figcaption></a>
-		<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br>This script was created while working for the Ontario Ministry of Transportation(MTO) Eastern Region. The region maintains a database of culverts in Eastern Ontario, which require regular inspections. These inspections are stored in a table related to the main culvert feature class, and this information needs to be exported to an online map service. However, because the service does not support joined tables, it was necessary to create a script that will select the latest inspection and join that information to the shapefile that gets exported. This was not an easy task, since the feature class contains over 10,000 culverts, each culvert can have multiple associated inspections, and the fact that ArcMap does not support SQL subqueries. Ultimately, my solution was to populate a list of unique culvert IDs, extract the most recent inspection date, and then create a dictionary with the IDs as the key and the date as the dates as values. This finally allowed me to build an SQL query that would select the correct feature and its most recent inspection, and then export a shapefile from that selection.
+		<br>
+		<br><i>Note: lines 90-120 were taken from a prexisting export script for simpler features and were not written by me.</i>
 		<h3>Folder Renamer, Based on Attribute</h3>
 		<a href="https://github.com/dbgmcclelland/dbgmcclelland.github.io/blob/master/CulvertJoin.py" target="_blank"><img style="align:center;" src="FolderRenamer.png">
 		<figcaption><i>Full code (opens in new tab)</i></figcaption></a>
-		<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br>This relatively straightforward script was also written to solve a problem related to culvert inspections. The region recently transitioned from an old culvert ID system (CVIDs) to a new one (DAIDs), which meant that external contractors were often using the old system. In this case, the contractor sent photos of culverts organized by the CVID. The script uses these folder names to find the associated DAID, and the OS module is subsequently used to rename the folders so that they could be properly imported to the existing folder structure.
 		</div>
+		<h3>Portfolio Website</h3>
+		<a href="https://github.com/dbgmcclelland/dbgmcclelland.github.io/blob/master/index.html" target="_blank"><img style="align:center;" src="html.png">
+		<figcaption><i>Full code (opens in new tab)</i></figcaption></a>
+		<br>This portfolio website was produced manually using HTML and CSS. While I am not a web designer or developer by trade, I am capable of producing functional web pages when required. At present, this website is completely static, but I am familiar with Javascript and web mapping techniques as well, and am currently working on developing a web app for a volunteer project using Leaflet.js. When complete, it will be available on this website as well.
 	</div>
 </div>
 </body>
