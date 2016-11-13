@@ -83,10 +83,10 @@ for k in dateDict:
             
 print "Exporting feature class to shapefile and MapGuide ....... "
 
+
+#Export to MapGuide
 errorLog = r'W:\ENG\Geomatics\GIS\MapGuide_Data_Updates\log.txt'
 filePath = errorLog
-
-# Export to MapGuide
 try:
 ######################     Step 1 - Test to see if file exists on MapGuide Server (if so, delete)   ######################
     test = MapGuide_Folder
