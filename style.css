@@ -2,7 +2,7 @@
 /* CSS Document*/
 /*Define the body element's color*/
 body {
-	background: #f7f4ed;
+	background: #FCF7FF;
 	font-family: Calibri;
 }
 
@@ -43,42 +43,42 @@ p:mainMenu {
 
 .span_7_of_8 {
   	width: 87.25%;
-	background: #e6e6e5
+	background: #F0DCCA;
 }
 
 .span_6_of_8 {
   	width: 74.5%;
-	background: #e6e6e5
+	background: #F0DCCA;
 }
 
 .span_5_of_8 {
   	width: 61.75%;
-	background: #e6e6e5
+	background: #F0DCCA;
 }
 
 .span_4_of_8 {
   	width: 49%;
-	background: #e6e6e5
+	background: #F0DCCA;
 }
 
 .span_3_of_8 {
   	width: 36.25%;
-	background: #e6e6e5;
+	background: #F0DCCA;
 }
 
 .span_2_of_8 {
   	width: 23.5%;
-	background: #e6e6e5
+	background: #F0DCCA;
 }
 
 .span_1_of_8 {
   	width: 10.75%;
-	background: #e6e6e5
+	background: #F0DCCA;
 }
 
 .content {
 	padding: 10px;
-	height: 75%;
+	height: 80%;
 	overflow: auto;
 }
 
