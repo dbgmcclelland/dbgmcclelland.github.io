@@ -17,30 +17,37 @@
 <div class="section group">
 	<div class="col span_1_of_8" style="text-align: center;">
 		<div class="content">
-		<a href="index.html" class="myButton">Resume</a>
+		<a href="index.html" class="myButton">Home</a>
 		<br>
 		<br>
-		<a href="maps.html" class="myButton" id="Test">Maps</a>
+		<a href="maps.html" class="myButton">Maps</a>
 		<br>
 		<br>
 		<a href="scripts.html" class="myButton">Scripts and code</a>
 		<br>
 		<br>
 		<a href="analysis.html" class="myButton">Analysis</a>
-		</p>
+		<br>
+		<br>
+		<a href="resume.html" class="myButton">Resume</a>
 		</div>
 	</div>
 	<div class="col span_7_of_8">
 		<div class="content" id="main" style="overflow:auto;">
 		<h3>Selecting Heron Nesting Sites with Model Builder</h3>
-		<center><img src="ConstraintModel.png">
+		<center><img src="Images\ConstraintModel.png">
 		<br>
-		<img src="CriteriaModel.png"></center>
-		<br>These models were produced as part of a project undertaken for the GIS program at Algonquin College. The objective was to analyze an approximately 600 km2 area in Eastern Ontario to discover suitable locations to build Great Blue Heron nesting sites. There were two steps to this analysis, the first of which was to develop a constraint model to remove areas which were completely unsuitable for nests, such as open water or, conversely, being too far from a body of water. Secondly, a criteria model was built and applied which applied search distances for proximity to water bodies, as well as distance from roads and buildings. This information was finally compiled and reclassified using a weighted scale into a raster dataset with high, medium, and low levels of suitability for nesting sites. The image below shows a small section of the output along with two road features, which act as an example of a negative impact on nesting site suitability.
-		<br>
-		<br><img src="herons.png">
+		<img src="Images\CriteriaModel.png"></center>
+		<div class="section group">
+			<div class="col span_6_of_8">
+				<br>These models were produced as part of a project undertaken for the GIS program at Algonquin College. The objective was to analyze an approximately 600 km2 area in Eastern Ontario to discover suitable locations to build Great Blue Heron nesting sites. There were two steps to this analysis, the first of which was to develop a constraint model to remove areas which were completely unsuitable for nests, such as open water or, conversely, being too far from a body of water. Secondly, a criteria model was built and applied which applied search distances for proximity to water bodies, as well as distance from roads and buildings. This information was finally compiled and reclassified using a weighted scale into a raster dataset with high, medium, and low levels of suitability for nesting sites. The image to the right shows a small section of the output along with two road features, which act as an example of a negative impact on nesting site suitability.
+			</div>
+			<div class="col span_2_of_8">
+				<br><img src="Images\herons.png">
+			</div>
+		</div>
 		<h3>Support Vector Machine Classification</h3>
-		<center><img src="SVN.png"></center>
+		<center><img src="Images\SVN.png"></center>
 		<br>This map was produced using a supervised classification method for remotely sensed images called Support Vector Machine (SVN). The input was a LANDSAT image of Ottawa, Ontario taken in 2006. Several training areas were created for each class using known locations, which was then run through the SVN tool in ENVI Image Analysis Software. The resulting land classification raster was then imported to ArcGIS where it was used to produce the above map of land use in Ottawa.
 		</div>
 	</div>
